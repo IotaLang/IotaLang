@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спецификация IotaLang</title>
+    <style>
+        @font-face {
+            font-family: 'HexCastingIotas';
+            /* Убедитесь, что имя файла совпадает */
+            src: url('HexCasting.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #130a1f;
+            color: #ece996;
+        }
+
+        h1 {
+            color: #ece996;
+            border-bottom: 2px solid #ece996;
+            padding-bottom: 10px;
+        }
+
+        /* 2. Применение шрифта к классу йоты */
+        .iota-glyph {
+            font-family: 'HexCastingIotas', sans-serif;
+            font-size: 48px;
+            color: #c8aae6;
+            line-height: 1;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #130a1f;
+        }
+
+        th, td {
+            border: 1px solid #fff;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #130a1f;
+            color: #ece996;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Спецификация IotaLang</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Вид</th>
+                <th>Паттерн</th>
+                <th>Имя йоты</th>
+                <th>Сигнатура</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="iota-glyph">a</td>
+                <td><code>jjdll</code></td>
+                <td>AdditiveDistillation</td>
+                <td>num|vec, vec|num &#8594; num|vec</td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">b</td>
+                <td><code>dslk</code></td>
+                <td>Introspection</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">c</td>
+                <td><code>klsd</code></td>
+                <td>Retrospection</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">d</td>
+                <td><code>ldfslk</code></td>
+                <td>HermesGambit</td>
+                <td>[iota]|iota &#8594; many</td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">e</td>
+                <td><code>ffkss</code></td>
+                <td>SubtractiveDistillation</td>
+                <td>num|vec, vec|num &#8594; num|vec</td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">f</td>
+                <td><code>lljfss</code></td>
+                <td>MultiplicativeDistillation</td>
+                <td>num|vec, vec|num &#8594; num|vec</td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">g</td>
+                <td><code>jjlsff</code></td>
+                <td>DivisionDistillation</td>
+                <td>num|vec, vec|num &#8594; num|vec</td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">h</td>
+                <td><code>dslkff</code></td>
+                <td>Consideration</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">i</td>
+                <td><code>kf</code></td>
+                <td>NoviceGambit</td>
+                <td>any &#8594;</td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">j</td>
+                <td><code>kfssfk</code></td>
+                <td>JesterGambit</td>
+                <td>any, any &#8594; any, any</td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">k</td>
+                <td><code>kfsfsfskk</code></td>
+                <td>DioscuriGambit</td>
+                <td>any, any &#8594; any, any, any, any</td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">l</td>
+                <td><code>kfsdlj</code></td>
+                <td>RotationGambit</td>
+                <td>any, any, any &#8594; any, any, any</td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">m</td>
+                <td><code>kfsfsk</code></td>
+                <td>GeminiDecomposition</td>
+                <td>any &#8594; any, any</td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">n</td>
+                <td><code>kfsdjl</code></td>
+                <td>ProspectorGambit</td>
+                <td>any, any &#8594; any, any, any</td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">o</td>
+                <td><code>kfsfskskf</code></td>
+                <td>GeminiGambit</td>
+                <td>any, number &#8594; many</td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">p</td>
+                <td><code>fddlskkjdfslj</code></td>
+                <td>FlockReflection</td>
+                <td>&#8594; num</td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">q</td>
+                <td><code>djljl</code></td>
+                <td>FishermanGambit</td>
+                <td>number &#8594; any</td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">r</td>
+                <td><code>kkfss</code></td>
+                <td>MindReflection</td>
+                <td>number &#8594; number</td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">s</td>
+                <td><code>jjll</code></td>
+                <td>IdentifierGambit</td>
+                <td>iota &#8594; any</td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">t</td>
+                <td><code>jdd</code></td>
+                <td>AugurPurification</td>
+                <td>any &#8594; bool</td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">u</td>
+                <td><code>ljjld</code></td>
+                <td>AugurExaltation</td>
+                <td>any, any, bool &#8594; any </td>
+            </tr>
+            <tr>
+                <td class="iota-glyph">v</td>
+                <td><code>ls</code></td>
+                <td>MaximusDistillation</td>
+                <td>num, num &#8594; bool</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
